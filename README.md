@@ -1,6 +1,6 @@
 # Hỏi đáp nghĩa vụ quân sự Việt Nam
 
-Website tĩnh (HTML, CSS, JavaScript thuần, không cần cài đặt) tổng hợp hỏi đáp về nghĩa vụ quân sự theo quy định mới nhất, cập nhật ngày 30/10/2026.
+Website tổng hợp hỏi đáp về nghĩa vụ quân sự theo quy định mới nhất, cập nhật ngày 30/10/2026.
 
 ## Tính năng
 - Trang nhiều mục: Trang chủ, Hỏi đáp, Công cụ, So sánh, Văn bản, Liên hệ
@@ -12,12 +12,11 @@ Website tĩnh (HTML, CSS, JavaScript thuần, không cần cài đặt) tổng h
 ## Cấu trúc thư mục
 ```
 hoidap-nvqs/
-├── index.html            # Trang chính
+├── index.html           # Trang chính
 ├── assets/
-│   ├── css/style.css     # Giao diện
-│   └── js/
-│       ├── app.js        # Tìm kiếm, lọc, hiển thị hỏi đáp
-│       └── tools.js      # Công cụ tính tuổi, BMI
+│   ├── style.css        # Giao diện
+│   └──├── app.js        # Tìm kiếm, lọc, hiển thị hỏi đáp
+│      └── tools.js      # Công cụ tính tuổi, BMI
 ├── data/
 │   ├── qa.js             # Dữ liệu câu hỏi đáp
 │   └── site.js           # Email, liên kết biểu mẫu đặt câu hỏi
