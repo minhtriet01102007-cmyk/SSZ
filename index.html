@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Hỏi đáp, công cụ tra cứu và so sánh về nghĩa vụ quân sự, nghĩa vụ Công an, Dân quân tự vệ theo quy định mới nhất.">
+<title>Nghĩa vụ quân sự 2027: hỏi đáp và công cụ tra cứu</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#trang-chu">🇻🇳 NVQS Việt Nam</a>
+    <nav>
+      <a href="#hoi-dap">Hỏi đáp</a>
+      <a href="#cong-cu">Công cụ</a>
+      <a href="#so-sanh">So sánh</a>
+      <a href="#van-ban">Văn bản</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+<section id="trang-chu" class="hero">
+  <h1>Nghĩa vụ quân sự: hỏi đáp và tra cứu theo quy định mới nhất</h1>
+  <p class="sub">Cập nhật ngày 30/10/2026, theo Luật số 14/2026/QH16 (hiệu lực từ 01/9/2026).</p>
+  <div class="badges">
+    <span class="badge">Khám sức khỏe: 01/11 đến 31/12 hằng năm</span>
+    <span class="badge">Phục vụ tại ngũ: 24 tháng</span>
+    <span class="badge">Độ tuổi gọi nhập ngũ: 18 đến 25 (sinh viên đến 27)</span>
+  </div>
+  <div class="cta">
+    <a class="btn" href="#hoi-dap">Xem hỏi đáp</a>
+    <a class="btn ghost" href="#cong-cu">Dùng công cụ tra cứu</a>
+  </div>
+  <div class="note">Nội dung mang tính tham khảo, không thay thế tư vấn pháp lý. Với trường hợp cụ thể, hãy liên hệ Ban chỉ huy quân sự cấp xã hoặc Hội đồng nghĩa vụ quân sự nơi cư trú.</div>
+</section>
+
+<section id="hoi-dap">
+  <h2>Hỏi đáp về nghĩa vụ quân sự</h2>
+  <input type="search" id="q" placeholder="Tìm câu hỏi, ví dụ: tạm hoãn, sinh viên, khám sức khỏe…" aria-label="Tìm kiếm">
+  <div class="chips" id="chips"></div>
+  <div id="list"></div>
+</section>
+
+<section id="cong-cu">
+  <h2>Công cụ tra cứu</h2>
+  <div class="tools">
+    <div class="tool">
+      <h3>Tính tuổi nghĩa vụ</h3>
+      <label>Năm sinh <input type="number" id="by" min="1990" max="2030" placeholder="VD: 2006"></label>
+      <label class="ck"><input type="checkbox" id="stu"> Đã hoặc đang học cao đẳng, đại học hệ chính quy</label>
+      <button class="btn" id="ageBtn" type="button">Tính</button>
+      <div class="out" id="ageOut" aria-live="polite"></div>
+    </div>
+    <div class="tool">
+      <h3>Tính BMI</h3>
+      <label>Chiều cao (cm) <input type="number" id="ht" min="100" max="230" placeholder="VD: 170"></label>
+      <label>Cân nặng (kg) <input type="number" id="wt" min="30" max="200" placeholder="VD: 60"></label>
+      <button class="btn" id="bmiBtn" type="button">Tính</button>
+      <div class="out" id="bmiOut" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="so-sanh">
+  <h2>So sánh 3 loại nghĩa vụ</h2>
+  <p class="sub">Nghĩa vụ quân sự, nghĩa vụ tham gia Công an nhân dân và Dân quân tự vệ.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Tiêu chí</th><th>Nghĩa vụ quân sự</th><th>Nghĩa vụ Công an</th><th>Dân quân tự vệ</th></tr></thead>
+    <tbody>
+      <tr><th>Căn cứ chính</th><td>Luật NVQS 2015, Luật 98/2025/QH15, Luật 14/2026/QH16</td><td>Luật Công an nhân dân 2018, Nghị định 70/2019/NĐ-CP</td><td>Luật Dân quân tự vệ 2019, Luật 98/2025/QH15</td></tr>
+      <tr><th>Độ tuổi</th><td>Nam 18 đến hết 25; đến hết 27 nếu đã được tạm hoãn để học cao đẳng, đại học</td><td>18 đến hết 25; đến hết 27 trong trường hợp tương tự</td><td>Nam 18 đến hết 45; nữ 18 đến hết 40</td></tr>
+      <tr><th>Thời hạn</th><td>24 tháng, có thể kéo dài tối đa 06 tháng</td><td>24 tháng, có thể kéo dài tối đa 06 tháng</td><td>Nòng cốt thường 04 năm; dân quân thường trực 02 năm</td></tr>
+      <tr><th>Trình độ văn hóa</th><td>Từ lớp 8; lớp 7 ở địa phương khó khăn nếu được cho phép</td><td>THPT trở lên; THCS ở một số địa bàn đặc thù</td><td>Luật không quy định mức tối thiểu chung</td></tr>
+      <tr><th>Đối tượng nữ</th><td>Chỉ thuộc một số trường hợp theo Luật</td><td>Chỉ tuyển khi tự nguyện và đáp ứng điều kiện</td><td>Có tham gia theo độ tuổi riêng</td></tr>
+      <tr><th>Tạm hoãn, miễn</th><td>Theo Điều 41 Luật NVQS</td><td>Áp dụng như tuyển chọn NVQS</td><td>Có quy định riêng trong Luật Dân quân tự vệ</td></tr>
+      <tr><th>Hoàn thành nghĩa vụ</th><td>Phục vụ đủ thời hạn tại ngũ</td><td>Được coi là đã thực hiện nghĩa vụ quân sự tại ngũ</td><td>Dân quân thường trực đủ 24 tháng, có quyết định công nhận, được coi là hoàn thành NVQS thời bình</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="van-ban">
+  <h2>Văn bản pháp luật liên quan</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Văn bản</th><th>Nội dung chính</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://xaydungchinhsach.chinhphu.vn/van-ban-hop-nhat-133-2026-vbhn-lq-vpqh-luat-nghia-vu-quan-su-119260929164231976.htm" target="_blank" rel="noopener">Văn bản hợp nhất 133/2026/VBHN-LQ-VPQH</a></td><td>Toàn văn Luật Nghĩa vụ quân sự đã hợp nhất, dùng để tra cứu chính</td></tr>
+      <tr><td><a href="https://luatvietnam.vn/can-bo-cong-chuc/chinh-sach-moi-ve-nghia-vu-quan-su-quan-nhan-chuyen-nghiep-si-quan-quan-doi-566-112224-article.html" target="_blank" rel="noopener">Luật 14/2026/QH16</a></td><td>Sửa 09 luật về quân sự, quốc phòng; hiệu lực 01/9/2026</td></tr>
+      <tr><td>Luật 98/2025/QH15</td><td>Sửa 11 luật về quân sự, quốc phòng, trong đó có thẩm quyền tạm hoãn, miễn gọi nhập ngũ</td></tr>
+      <tr><td>Luật Nghĩa vụ quân sự 78/2015/QH13</td><td>Văn bản gốc về đăng ký, tuyển chọn, tạm hoãn, miễn, chế độ chính sách</td></tr>
+      <tr><td>Thông tư 148/2018/TT-BQP, sửa đổi bởi 68/2025/TT-BQP</td><td>Tiêu chuẩn tuyển chọn, trình độ văn hóa, độ tuổi</td></tr>
+      <tr><td>Thông tư 105/2023/TT-BQP, sửa đổi bởi 106/2025/TT-BQP</td><td>Tiêu chuẩn sức khỏe nghĩa vụ quân sự</td></tr>
+      <tr><td>Nghị định 218/2025/NĐ-CP</td><td>Xử phạt vi phạm hành chính trong lĩnh vực nghĩa vụ quân sự</td></tr>
+      <tr><td>Nghị định 70/2019/NĐ-CP</td><td>Thực hiện nghĩa vụ tham gia Công an nhân dân</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="lien-he">
+  <h2>Liên hệ và đặt câu hỏi</h2>
+  <p>Bạn có câu hỏi chưa có trong trang này? Hãy gửi qua biểu mẫu hoặc email dưới đây.</p>
+  <div class="cta">
+    <a class="btn" id="askLink" href="#lien-he">Đặt câu hỏi</a>
+    <a class="btn ghost" id="mailLink" href="#lien-he">Gửi email</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><strong>Nguồn tham khảo:</strong> văn bản hợp nhất 133/2026/VBHN-LQ-VPQH, Luật 14/2026/QH16 và các bài tổng hợp trên Chinhphu.vn, Tuổi Trẻ, LuatVietnam, Thư viện Pháp luật.</p>
+    <p>Dự án phi thương mại, thông tin chỉ mang tính tham khảo.</p>
+  </div>
+</footer>
+
+<script src="data/site.js"></script>
+<script src="data/qa.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/tools.js"></script>
+</body>
+</html>
